@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Foldit:wght@500&family=Gasoek+One&family=Holtwood+One+SC&family=Monoton&family=Nabla&family=Rubik+Doodle+Shadow&family=Vast+Shadow&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="logic.mjs" defer></script>
+    <script type="module" src="db.mjs" defer></script>
+    <script type="module" src="script.js" defer></script>
+    <link rel="shortcut icon" href="Resources/favicon-hh.png" type="image/x-icon">
+    <title>Hip-Hop Tribute</title>
+
+</head>
+
+
+<body>
+
+    <header>
+        <div class="container">
+            <img class="logo" src="Resources/New Project (1).png">
+
+            <div class="navigation">
+                <a class="link" href="#">Home</a>
+                <a class="link" href="#goats">The G.O.A.T.S</a>
+                <a class="link" href="#survey">Find your Rapper</a>
+                <a class="link" href="#test" href="">Test Your Skills</a>
+                <a class="link" target="_blank" id="myb" href="">Know the UnderGround</a>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="intro">
+        <img id="banner" src="Resources/1366_521.jpeg">
+    </div>
+
+
+    <h1 id="goat">G.O.A.T.S</h1>
+    <div class="artists" id="goats">
+
+        <img id="2" src="Resources/snoop.png"></img>
+        <img id="5" src="Resources/mjb.png"></img>
+        <img id="3" src="Resources/dre.png"></img>
+        <img id="1" src="Resources/eminem.png"></img>
+        <img id="4" src="Resources/kendrick.png"></img>
+
+    </div>
+
+    <div class="questionare" id="survey">
+    </div>
+    <div class="head-form">
+        <div class="title">
+            <h1><strong> If you are new here, and don't have a clue of where to start your Hip-Hop listening spree, we
+                    have
+                    the solution right here...</strong></h1>
+            <h3>Just answer these simple question and we will set you up with your new favorite rapper</h3>
+        </div>
+        <div id="rap-form">
+            <form class="px-4 my-form" action="">
+                <div class="form-info">
+                    <h1>Are you Racist?</h1>
+                    <select id="racist" class="form-select" aria-label="Default select example">
+                        <option value="1">Yes</option>
+                        <option value="2">No</option>
+                    </select>
+                </div>
+                <div class="form-info">
+                    <h1>Did you lie in the last question?</h1>
+                    <select id="racistcheck" class="form-select" aria-label="Default select example">
+                        <option value="1">Yes</option>
+                        <option value="2">No</option>
+                    </select>
+                </div>
+                <div class="form-info">
+                    <h1>Do you like pineapple on pizza?</h1>
+                    <select id="pizza" class="form-select" aria-label="Default select example">
+                        <option value="1">Yes</option>
+                        <option value="2">No</option>
+                    </select>
+                </div>
+                <div class="form-info">
+                    <h1>Have you ever killed a man?</h1>
+                    <select id="kill" class="form-select" aria-label="Default select example">
+                        <option value="1">Yes</option>
+                        <option value="2">No</option>
+                    </select>
+                </div>
+                <div class="form-info">
+                    <h1>Have you tried?</h1>
+                    <select id="killcheck" class="form-select" aria-label="Default select example">
+                        <option value="1">Yes</option>
+                        <option value="2">No</option>
+                    </select>
+                </div>
+                <div class="form-info">
+                    <h1>Are you a bitch?</h1>
+                    <select id="bitch" class="form-select" aria-label="Default select example">
+                        <option value="1">Yes</option>
+                        <option value="2">No</option>
+                    </select>
+                </div>
+                <div class="form-info">
+                    <h1>Boobs or Ass?</h1>
+                    <select id="rack" class="form-select" aria-label="Default select example">
+                        <option value="1">Boobs</option>
+                        <option value="2">Ass</option>
+                    </select>
+                </div>
+                <div class="form-info">
+                    <h1>Cozido à portuguesa or Bifinhos com cogumelos?</h1>
+                    <select id="food" class="form-select" aria-label="Default select example">
+                        <option value="1">Cozido</option>
+                        <option value="2">Bifinhos</option>
+                    </select>
+                </div>
+        </div>
+        <div class="card-footer text-end sub" id="test">
+            <button type="button" class="btn btn-secondary" id="submit-btn">Submit</button>
+        </div>
+    </div>
+    <div id="Bclass">
+        <div class="title2">
+            <h1><strong>So you think you have what it takes to be a big shot? Well, here is your chance to prove it to
+                    yourself and your friends!</strong></h1>
+            <h3>By pressing the button you take on the challenge of free styling on a random track alone or against some
+                friends...if you have any</h3>
+        </div>
+        <div>
+            <button id="remix-btn">Get Ready 4 the Beat</button>
+        </div>
+        <div id="aud">
+
+        </div>
+    </div>
+
+
+    <div>
+        <video autoplay muted loop id="performance">
+            <source
+                src="Resources/Dr. Dre, Snoop Dogg, Eminem, Mary J. Blige, Kendrick Lamar & 50 Cent FULL Pepsi SB LVI Halftime Show.mp4"
+                type="video/mp4">
+        </video>
+
+    </div>
+
+
+
+
+
+    <footer>
+        <div>
+            <p>&copy; 2023 Hip Hop Tribute. All rights reserved.</p>
+            <p>123 Main Street, Cityville, HipHopland</p>
+            <p>*Com contribuição de Tio Nelson, Mr. Canva, Indianos no youtube e RedBull Energy Drinks</p>
+        </div>
+        <div>
+            <p>Follow us on social media:</p>
+            <a href="https://www.facebook.com/JesusChristLivingGOD/" target="_blank"
+                rel="noopener noreferrer">Facebook</a>
+            <a href="https://twitter.com/Jesus_M_Christ?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="https://www.instagram.com/dejesusoficial/?hl=en" target="_blank"
+                rel="noopener noreferrer">Instagram</a>
+        </div>
+        <div>
+            <p>Contact us: <a href="mailto:info@hiphoptribute.com">info@hiphoptribute.com</a></p>
+        </div>
+        <div>
+            <p>Designed by: Os Vencedores</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
