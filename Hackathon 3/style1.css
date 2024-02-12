@@ -1,0 +1,373 @@
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+#mainimage {
+  width: 100%;
+  mask-image: linear-gradient(#000, rgba(0, 0, 0, 0));
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+  -ms-interpolation-mode: bicubic;
+}
+
+.body {
+  display: flex;
+  background-color: #000;
+
+}
+
+header {
+
+  background-color: black;
+  width: 100%;
+  z-index: 2;
+  mask-image: linear-gradient(#000, rgba(0, 0, 0, 0));
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+  -ms-interpolation-mode: bicubic;
+  position: absolute;
+}
+
+.container {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0em 2em 0em;
+  background-color: black;
+  z-index: 2;
+  width: 100%;
+
+
+}
+
+.logo {
+  width: 30em;
+
+
+}
+
+.navigation {
+  margin-top: 2em;
+}
+
+.link {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: rgb(182, 182, 182);
+  border-radius: 20px;
+  margin: 0 10px;
+  z-index: 2;
+  justify-content: space-between;
+}
+
+.link:hover {
+  background-color: rgb(23, 45, 198);
+  color: white;
+}
+
+#artistName {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background-color: black;
+  color: white;
+  height: 20vh;
+  align-items: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20em;
+  line-height: 42vh;
+  /* text-shadow: #aaa; */
+  padding-bottom: 4%;
+
+
+}
+
+.about-display {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+
+}
+
+.about-display h1,
+.about-display p {
+  display: flex;
+  align-self: center;
+
+
+}
+
+.about-display h1 {
+  font-size: 7em;
+  padding-bottom: 2%;
+  padding-right: 2%;
+}
+
+/* #about{
+  display: flex;
+  align-items: flex-start;
+} */
+
+.about-display p {
+  text-align: justify;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  justify-content: space-around;
+  height: 90vh;
+}
+
+#about {
+  background-color: rgb(200, 181, 181);
+  color: #000;
+  border-radius: 2%;
+  margin-right: 3%;
+  padding-left: 2%;
+  text-align: center;
+}
+
+.aboutText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  color: aliceblue;
+  font-family: 'Maven Pro', sans-serif;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0%;
+
+}
+
+
+.events_merch {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px;
+  background-color: black;
+  height: 20vh;
+}
+
+.impact {
+  margin: auto;
+  display: flex;
+  background-color: black;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+.newArtists {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  height: 50vh;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  width: 30em;
+  height: 19em;
+  background: linear-gradient(-45deg, #bdbdbd 0%, #1d0171 100%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  margin-right: 7%;
+}
+
+.card:last-child {
+  margin-right: 1%;
+}
+
+.card:first-child {
+  margin-left: 1%;
+}
+
+.card svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card:hover {
+  transform: rotate(-5deg) scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 100%;
+  height: 100%;
+  padding: 5em;
+  box-sizing: border-box;
+  background-color: rgba(60, 118, 215, 0.1);
+  backdrop-filter: blur(10px);
+  color: white;
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card:hover .card__content {
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
+}
+
+.card__title {
+  margin-top: -15px;
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 0.5px 0.5px 1px rgb(0, 0, 0), 0 0 1em black, 0 0 0.2em black;
+  font-weight: 700;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+.card__description {
+  margin: 10px 0 0;
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 0.5px 0.5px 1px rgb(0, 0, 0), 0 0 1em black, 0 0 0.2em black;
+  line-height: 1.4;
+  margin-bottom: -10px;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+.card:hover svg {
+  scale: 0;
+  transform: rotate(-45deg);
+}
+
+
+.events_merch {
+
+  width: 100%;
+  background-color: #000;
+  position: relative;
+
+}
+
+.events_merch button {
+  background-color:  grey;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  width: 10em;
+  border-radius: 1rem;
+  color: white;
+  box-shadow: 0 0.4rem #dfd9d9;
+  cursor: pointer;
+}
+
+.events_merch button:active {
+  color: white;
+  box-shadow: 0 0.2rem #000;
+  transform: translateY(0.2rem);
+}
+
+.events_merch button:hover:not(:disabled) {
+  background: rgb(49, 64, 167);
+  color: white;
+  text-shadow: 0 0.1rem #bcb4b4;
+}
+
+.events_merch button:disabled {
+  cursor: auto;
+  color: rgb(49, 64, 167);
+}
+
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+
+}
+
+.carousel-inner {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding-right: 40%;
+}
+
+.car img {
+  width: 600px;
+  height: auto;
+}
+
+.albums {
+
+  height: 100%;
+  
+
+
+}
+
+.album-header h2 {
+  font-size: 80px;
+
+}
+
+.album-header {
+  background-color: black;
+  color: #fff;
+  font-family: 'Monoton';
+  display: flex;
+  justify-content: center;
+  font-size: 100em;
+  height: 100px;
+}
+
+footer {
+  mask-image: linear-gradient(to top, #000, rgba(0,0,0,0.8));
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
+  -ms-interpolation-mode: bicubic; 
+  background-color: #000;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  z-index: 2;
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer div {
+  margin-bottom: 15px;
+}
+
+/* Center the content in the footer */
+footer p {
+  margin: 0;
+}
+
+
